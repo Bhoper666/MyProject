@@ -9,9 +9,10 @@ while True:
     bgr = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
     dif = frame - bgr
 
-    cv2.imshow('frame', frame)
-    cv2.imshow('bgr', bgr)
-    cv2.imshow('dif', dif)
+    cv2.imshow('OG', frame)
+    cv2.imshow('HSV', hsv)
+    cv2.imshow('BGR', bgr)
+    cv2.imshow('Difference', dif)
 
     if cv2.waitKey(1) == ord('q'):
         break
